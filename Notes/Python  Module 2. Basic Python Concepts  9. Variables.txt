@@ -1,0 +1,82 @@
+Python > Module 2. Basic Python Concepts > 9. Variables
+Reserved memory locations
+
+6x + 7y + 2z = 0
+
+Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> a=1
+>>> print(a)
+1
+>>> a
+1
+>>> b=2
+>>> print(b)
+2
+>>> c=3
+>>> print(c)
+3
+>>> d=a + b + c
+>>> print(d)
+6
+>>>
+>>> del d
+>>>
+>>> print(d)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'd' is not defined
+>>> print(a)
+1
+>>> print(b)
+2
+>>> print(c)
+3
+>>>
+>>>
+>>> x=5
+>>> print(x)
+5
+>>> x=3
+>>> print(x)
+3
+>>> y=1
+>>> z=x*y
+>>> print(z)
+3
+>>>
+>>>
+>>> a="python"
+>>> print(a)
+python
+>>>
+>>>
+>>> a=1
+>>> print(a)
+1
+>>> _a=1
+>>> print(_a)
+1
+>>> 5=1
+  File "<stdin>", line 1
+    5=1
+    ^
+SyntaxError: cannot assign to literal
+>>>
+>>> age=50
+>>> print(age)
+50
+>>> print(Age)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'Age' is not defined
+>>>
+>>>
+>>> #"hello world"
+>>>
+>>> a1="hello"
+>>> a2=" world"
+>>> b=a1 + a2
+>>> print(b)
+hello world
+>>>

@@ -1,0 +1,32 @@
+Python > Module 2. Basic Python
+Concepts > 5. Mathematical
+operations
+>>> 10 + 20
+30
+>>> 2 ** 2
+File "<stdin>", line 1
+2 ** 2
+IndentationError: unexpected indent
+>>> 2 ** 2
+4
+>>> 49 ** (1/2)
+7.0
+>>> 2.0 * 3
+6.0
+>>> 9/3
+3.0
+>>> 10/3
+3.3333333333333335
+>>> 10 // 3
+3
+>>> 9 / 0
+Traceback (most recent call last):
+File "<stdin>", line 1, in <module>
+ZeroDivisionError: division by zero
+>>> 9 / 1-1
+8.0
+>>> 782.434 % 43
+8.433999999999969
+>>> 87 % (8//7) ** (1/4)
+0.0
+>>>

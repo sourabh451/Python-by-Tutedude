@@ -1,0 +1,40 @@
+Python > Module 2. Basic Python Concepts > 7. Input function
+Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> input('Are you an alien?')
+Are you an alien?Yes
+'Yes'
+>>>
+>>> input('Which is your favourite team?')
+Which is your favourite team?Liverpool
+'Liverpool'
+>>> print('Are you an alien?')
+Are you an alien?
+>>> input('Are you an alien?')
+Are you an alien?5
+'5'
+>>>
+>>> print('Hey there! Thank you')
+Hey there! Thank you
+>>> print('Hey there!\n Thank you')
+Hey there!
+ Thank you
+>>> print('Hey there!\nThank you')
+Hey there!
+Thank you
+>>>
+>>> print('Carrots Rs.30')
+Carrots Rs.30
+>>> print('Carrots\t Rs.30')
+Carrots  Rs.30
+>>>
+>>>
+>>> # Item        Qty
+>>> # Apples       5
+>>> # Plums        10
+>>>
+>>> print('Item \tQty \nApples \t5 \nPlums \t10')
+Item    Qty
+Apples  5
+Plums   10
+>>>

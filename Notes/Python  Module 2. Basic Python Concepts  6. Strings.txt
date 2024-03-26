@@ -1,0 +1,49 @@
+Python > Module 2. Basic Python Concepts > 6. Strings
+>>> 'Hello world'
+'Hello world'
+>>> "Hello world"
+'Hello world'
+>>> Hello world
+File "<stdin>", line 1
+Hello world
+^
+SyntaxError: invalid syntax
+>>> print('Hello world')
+Hello world
+>>> #Comments
+>>> # Python's world
+>>> # method 1:
+>>> print('Python')
+Python
+>>> print('Python's world')
+File "<stdin>", line 1
+print('Python's world')
+^
+SyntaxError: invalid syntax
+>>> print("Python's world")
+Python's world
+>>> # method 2:
+>>> ...
+Ellipsis
+>>> print('Python\'s world')
+Python's world
+>>>
+>>>
+>>> # method 3:
+>>> print("Python's" ' world')
+Python's world
+>>>
+>>> # Python's "world"
+>>> print("Python's \"world\""
+... print("Python's \"world\"")
+File "<stdin>", line 2
+print("Python's \"world\"")
+^
+SyntaxError: invalid syntax
+>>> print("Python's" '\"world\"')
+Python's"world"
+>>> print("Python's" ' \"world\"')
+Python's "world"
+>>> print('Python\'s "world"')
+Python's "world"
+>>>

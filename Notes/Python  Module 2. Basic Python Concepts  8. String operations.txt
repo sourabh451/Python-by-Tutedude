@@ -1,0 +1,64 @@
+Python > Module 2. Basic Python Concepts > 8. String operations
+Python 3.9.6 (tags/v3.9.6:db3ff76, Jun 28 2021, 15:26:21) [MSC v.1929 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> "python"
+'python'
+>>> 1
+1
+>>> 2.3
+2.3
+>>> "1"
+'1'
+>>>
+>>>
+>>> "hello" + "world"
+'helloworld'
+>>> "hello" + " world"
+'hello world'
+>>>
+>>>
+>>> 1 + 2
+3
+>>> "1" + "2"
+'12'
+>>>
+>>> "2" + "5"
+'25'
+>>> "1" + 2
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can only concatenate str (not "int") to str
+>>>
+>>> "python" * 3
+'pythonpythonpython'
+>>> "python " * 3
+'python python python '
+>>> "python " * 10
+'python python python python python python python python python python '
+>>>
+>>> "python" * "12"
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: can't multiply sequence by non-int of type 'str'
+>>>
+>>>
+>>> # I am a polite person.
+>>> # I am a polite person.
+>>> # I am a polite person.
+>>>
+>>> print(("I" + "am"  a polite person
+  File "<stdin>", line 1
+    print(("I" + "am"  a polite person
+                       ^
+SyntaxError: invalid syntax
+>>> print(("I" + " am" + " a" + " polite" + " person.\n") * 3)
+I am a polite person.
+I am a polite person.
+I am a polite person.
+
+>>> print(("I am a polite person.\n") * 3)
+I am a polite person.
+I am a polite person.
+I am a polite person.
+
+>>>
