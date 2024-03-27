@@ -4,4 +4,6 @@
 
 #print(abs(-2020))
 
-print(pow(2,3))
+#print(pow(2,3))
+
+print(pow(2,4))
