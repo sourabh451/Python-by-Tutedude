@@ -61,3 +61,4 @@ b = Button(window, text='clear', width = 12)
 b.place(x=10, y=350)
 
 # step4: mainloop
+mainloop()
