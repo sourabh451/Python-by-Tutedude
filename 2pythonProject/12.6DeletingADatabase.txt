@@ -1,0 +1,19 @@
+demodb=# create database test;
+CREATE DATABASE
+demodb=# \l
+                                         List of databases
+   Name    |  Owner   | Encoding |      Collate       |       Ctype        |   Access privileges
+-----------+----------+----------+--------------------+--------------------+-----------------------
+ demodb    | postgres | UTF8     | English_India.1252 | English_India.1252 |
+ postgres  | postgres | UTF8     | English_India.1252 | English_India.1252 |
+ template0 | postgres | UTF8     | English_India.1252 | English_India.1252 | =c/postgres          +
+           |          |          |                    |                    | postgres=CTc/postgres
+ template1 | postgres | UTF8     | English_India.1252 | English_India.1252 | =c/postgres          +
+           |          |          |                    |                    | postgres=CTc/postgres
+ test      | postgres | UTF8     | English_India.1252 | English_India.1252 |
+(5 rows)
+
+
+demodb=# drop database test;
+DROP DATABASE
+demodb=#
