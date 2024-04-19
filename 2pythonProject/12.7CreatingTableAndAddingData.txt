@@ -1,0 +1,43 @@
+Server [localhost]:
+Database [postgres]:
+Port [5432]:
+Username [postgres]:
+Password for user postgres:
+psql (13.14)
+WARNING: Console code page (437) differs from Windows code page (1252)
+         8-bit characters might not work correctly. See psql reference
+         page "Notes for Windows users" for details.
+Type "help" for help.
+
+postgres=# \l
+                                         List of databases
+   Name    |  Owner   | Encoding |      Collate       |       Ctype        |   Access privileges
+-----------+----------+----------+--------------------+--------------------+-----------------------
+ demodb    | postgres | UTF8     | English_India.1252 | English_India.1252 |
+ postgres  | postgres | UTF8     | English_India.1252 | English_India.1252 |
+ template0 | postgres | UTF8     | English_India.1252 | English_India.1252 | =c/postgres          +
+           |          |          |                    |                    | postgres=CTc/postgres
+ template1 | postgres | UTF8     | English_India.1252 | English_India.1252 | =c/postgres          +
+           |          |          |                    |                    | postgres=CTc/postgres
+(4 rows)
+
+
+postgres=# create database student;
+CREATE DATABASE
+postgres=# \c student
+You are now connected to database "student" as user "postgres".
+student=# CREATE TABLE students(name text,number int,age int);
+CREATE TABLE
+student=# \d
+          List of relations
+ Schema |   Name   | Type  |  Owner
+--------+----------+-------+----------
+ public | students | table | postgres
+(1 row)
+
+
+student=# INSERT INTO students(name,number,age) VALUES('Sam',12,20);
+INSERT 0 1
+student=# INSERT INTO students(name,number,age) VALUES('Jake',22,20);
+INSERT 0 1
+student=#
