@@ -1,0 +1,61 @@
+Microsoft Windows [Version 10.0.19045.4170]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Asus>cd ..
+
+C:\Users>cd /d D:
+
+D:\>cd Tutedude
+
+D:\Tutedude>cd Python
+
+D:\Tutedude\Python>cd 12Visual_Studio
+
+D:\Tutedude\Python\12Visual_Studio>pip install virtualenv
+Collecting virtualenv
+  Downloading virtualenv-20.25.3-py3-none-any.whl (3.9 MB)
+     |████████████████████████████████| 3.9 MB 3.3 MB/s
+Collecting filelock<4,>=3.12.2
+  Downloading filelock-3.13.4-py3-none-any.whl (11 kB)
+Collecting distlib<1,>=0.3.7
+  Downloading distlib-0.3.8-py2.py3-none-any.whl (468 kB)
+     |████████████████████████████████| 468 kB 6.8 MB/s
+Collecting platformdirs<5,>=3.9.1
+  Downloading platformdirs-4.2.0-py3-none-any.whl (17 kB)
+Installing collected packages: platformdirs, filelock, distlib, virtualenv
+Successfully installed distlib-0.3.8 filelock-3.13.4 platformdirs-4.2.0 virtualenv-20.25.3
+WARNING: You are using pip version 21.1.3; however, version 24.0 is available.
+You should consider upgrading via the 'c:\users\asus\appdata\local\programs\python\python39\python.exe -m pip install --upgrade pip' command.
+
+D:\Tutedude\Python\12Visual_Studio>virtualenv env
+created virtual environment CPython3.9.6.final.0-64 in 1576ms
+  creator CPython3Windows(dest=D:\Tutedude\Python\12Visual_Studio\env, clear=False, no_vcs_ignore=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\Asus\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==24.0, setuptools==69.5.1, wheel==0.43.0
+  activators BashActivator,BatchActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+
+D:\Tutedude\Python\12Visual_Studio>cd env
+
+D:\Tutedude\Python\12Visual_Studio\env>cd scripts
+
+D:\Tutedude\Python\12Visual_Studio\env\Scripts>activate
+
+D:\Tutedude\Python\12Visual_Studio\env\Scripts>()
+
+(env) D:\Tutedude\Python\12Visual_Studio\env\Scripts>cd ..
+
+(env) D:\Tutedude\Python\12Visual_Studio\env>cd ..
+
+(env) D:\Tutedude\Python\12Visual_Studio>python 12.9test.py
+python
+
+(env) D:\Tutedude\Python\12Visual_Studio>deactivate
+D:\Tutedude\Python\12Visual_Studio>cd env
+
+D:\Tutedude\Python\12Visual_Studio\env>cd scripts
+
+D:\Tutedude\Python\12Visual_Studio\env\Scripts>activate
+
+D:\Tutedude\Python\12Visual_Studio\env\Scripts>()
+
+(env) D:\Tutedude\Python\12Visual_Studio\env\Scripts>
