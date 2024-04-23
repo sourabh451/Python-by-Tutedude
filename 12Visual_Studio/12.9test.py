@@ -1,4 +1,10 @@
 import psycopg2
-connect = psycopg2.connect(dbname="postgres",user="postgres",password="root",host="localhost",port="5432")
+conn = psycopg2.connect(dbname="postgres",user="postgres",password="root",host="localhost",port="5432")
 
-print('Connected Successfully')
+cursor = conn.cursor()
+cursor.execute('''create table employees(Name Text, ID int, Age int);''')
+print('Table created successfully')
+
+conn.commit()
+conn.close()
+

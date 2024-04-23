@@ -1,0 +1,48 @@
+cmd
+
+D:\Tutedude\Python\12Visual_Studio>cd env
+
+D:\Tutedude\Python\12Visual_Studio\env>cd Scripts
+
+D:\Tutedude\Python\12Visual_Studio\env\Scripts>activate
+
+D:\Tutedude\Python\12Visual_Studio\env\Scripts>()
+
+(env) D:\Tutedude\Python\12Visual_Studio\env\Scripts>cd ..
+
+(env) D:\Tutedude\Python\12Visual_Studio\env>cd ..
+
+(env) D:\Tutedude\Python\12Visual_Studio>python 12.9test.py
+Table created successfully
+
+(env) D:\Tutedude\Python\12Visual_Studio>
+
+
+psql
+
+Server [localhost]:
+Database [postgres]:
+Port [5432]:
+Username [postgres]:
+Password for user postgres:
+psql (13.14)
+WARNING: Console code page (437) differs from Windows code page (1252)
+         8-bit characters might not work correctly. See psql reference
+         page "Notes for Windows users" for details.
+Type "help" for help.
+
+postgres=# \d
+           List of relations
+ Schema |   Name    | Type  |  Owner
+--------+-----------+-------+----------
+ public | employees | table | postgres
+(1 row)
+
+
+postgres=# select * from employees;
+ name | id | age
+------+----+-----
+(0 rows)
+
+
+postgres=#
