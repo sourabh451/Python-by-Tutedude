@@ -19,4 +19,18 @@ def data():
     conn.commit()
     conn.close()
 
-data()
+def extract():
+    conn = psycopg2.connect(dbname="postgres",user="postgres",password="root",host="localhost",port="5432")
+
+    cursor = conn.cursor()
+    cursor.execute('''select * from employees;''')
+    #print(cursor.fetchone())
+    show = cursor.fetchone()
+    #print(show[0])
+    #print(show[1])
+    print(show[2])
+
+    conn.commit()
+    conn.close()
+
+extract()
