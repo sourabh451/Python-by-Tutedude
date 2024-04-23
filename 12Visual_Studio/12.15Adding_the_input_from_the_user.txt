@@ -1,0 +1,16 @@
+terminal
+
+PS D:\Tutedude\Python\12Visual_Studio> python .\12.9test.py
+Enter name: John
+Enter id: 02
+Enter age: 35
+Data added successfully
+
+psql
+
+postgres=# select * from employees;
+ name | id | age
+------+----+-----
+ Sam  |  1 |  30
+ John |  2 |  35
+(2 rows)

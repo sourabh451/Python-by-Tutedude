@@ -13,24 +13,30 @@ def data():
     conn = psycopg2.connect(dbname="postgres",user="postgres",password="root",host="localhost",port="5432")
 
     cursor = conn.cursor()
-    cursor.execute('''insert into employees(Name,ID,Age) values('Sam', 01, 30);''')
+    name = input('Enter name: ')
+    id = input('Enter id: ')
+    age = input('Enter age: ')
+    query = '''insert into employees(Name,ID,Age) values(%s,%s,%s);'''
+    cursor.execute(query,(name,id,age))
     print('Data added successfully')
 
     conn.commit()
     conn.close()
 
-def extract():
-    conn = psycopg2.connect(dbname="postgres",user="postgres",password="root",host="localhost",port="5432")
+data()
 
-    cursor = conn.cursor()
-    cursor.execute('''select * from employees;''')
-    #print(cursor.fetchone())
-    show = cursor.fetchone()
-    #print(show[0])
-    #print(show[1])
-    print(show[2])
+# def extract():
+#     conn = psycopg2.connect(dbname="postgres",user="postgres",password="root",host="localhost",port="5432")
 
-    conn.commit()
-    conn.close()
+#     cursor = conn.cursor()
+#     cursor.execute('''select * from employees;''')
+#     #print(cursor.fetchone())
+#     show = cursor.fetchone()
+#     #print(show[0])
+#     #print(show[1])
+#     print(show[2])
 
-extract()
+#     conn.commit()
+#     conn.close()
+
+# extract()
