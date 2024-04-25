@@ -1,0 +1,23 @@
+
+D:\Tutedude\Python\14Django>django-admin startproject Hello_world_using_Django_14_4
+
+D:\Tutedude\Python\14Django>cd Hello_world_using_Django_14_4
+
+D:\Tutedude\Python\14Django\Hello_world_using_Django_14_4>python manage.py startapp helloapp
+
+D:\Tutedude\Python\14Django\Hello_world_using_Django_14_4>python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+
+You have 18 unapplied migration(s). Your project may not work properly until you apply the migrations for app(s): admin, auth, contenttypes, sessions.
+Run 'python manage.py migrate' to apply them.
+April 25, 2024 - 16:01:10
+Django version 4.2.11, using settings 'Hello_world_using_Django_14_4.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+
+Not Found: /
+[25/Apr/2024 16:02:00] "GET / HTTP/1.1" 404 2193
+[25/Apr/2024 16:02:12] "GET /helloworld/ HTTP/1.1" 200 12
