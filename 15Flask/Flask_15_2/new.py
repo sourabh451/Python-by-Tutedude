@@ -1,17 +1,19 @@
 # IMPORTING
-from flask import Flask
+from flask import Flask , render_template
 
 # INTERACTION
 web = Flask(__name__)
 
 # MAPPING
 @web.route('/')
-@web.route('/home')
+@web.route('/register')
 
 # INPUTS
-def home():
-    return "Welcome"
+def homepage():
+    return render_template('register.html')
 
 # MAIN
 if __name__ == "__main__":
     web.run(debug=True)
+
+
