@@ -14,7 +14,7 @@ def first():
 @app.route('/second')
 # INPUTS
 def second():
-    return "Welcome to second page"
+    return render_template('second.html')
 
 # MAIN
 if __name__ == '__main__':
