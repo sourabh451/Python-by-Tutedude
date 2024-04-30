@@ -16,8 +16,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from helloworld.views import HelloWorldView
 from rest_framework import routers
+from helloworld.views import HelloWorldView
 from helloworld.views import PostView
 
 urlpatterns = [
@@ -27,6 +27,6 @@ urlpatterns = [
 ]
 
 router = routers.SimpleRouter()
-router.register('post',PostView)
+router.register('post',PostView, basename="post")
 
 urlpatterns+= router.urls
