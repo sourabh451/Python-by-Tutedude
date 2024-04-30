@@ -1,0 +1,2 @@
+for installing django-filter use below command
+pip install django-filter==2.4.0
