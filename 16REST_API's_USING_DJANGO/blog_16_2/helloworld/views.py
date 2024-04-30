@@ -20,8 +20,9 @@ class PostView(ModelViewSet):
 
     permission_classes = [IsAuthenticated, IsPostPossessor]
     serializer_class = PostSerializer
-    filter_backends = [DjangoFilterBackend, filters.SearchFilter]
+    filter_backends = [DjangoFilterBackend, filters.SearchFilter, filters.OrderingFilter]
     filter_class = PostFilter
+    ordering_fields = ['id']
     search_fields = ['title','content']
 
     def get_queryset(self):
