@@ -12,6 +12,8 @@ def Extract(url):
     #h = tag.find("h2")
     #h = tag.find("h2").find("span")
     h = tag.find_all("h2")
-    print(h)
+    #print(h)
+    content = [span.text for span in h]
+    print(content)
 
 Extract(url="https://en.wikipedia.org/wiki/Main_Page")
