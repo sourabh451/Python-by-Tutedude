@@ -8,6 +8,8 @@ def Extract(url):
     soup = BeautifulSoup(response, 'lxml')
     #tag = soup.div
     tag = soup.find('div' , {"id" : "mp-right"})
-    print(tag)
+    #print(tag)
+    h = tag.find("h2")
+    print(h)
 
 Extract(url="https://en.wikipedia.org/wiki/Main_Page")
