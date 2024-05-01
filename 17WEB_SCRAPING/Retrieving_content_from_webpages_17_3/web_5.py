@@ -9,7 +9,9 @@ def Extract(url):
     #tag = soup.div
     tag = soup.find('div' , {"id" : "mp-right"})
     #print(tag)
-    h = tag.find("h2")
+    #h = tag.find("h2")
+    #h = tag.find("h2").find("span")
+    h = tag.find_all("h2")
     print(h)
 
 Extract(url="https://en.wikipedia.org/wiki/Main_Page")
