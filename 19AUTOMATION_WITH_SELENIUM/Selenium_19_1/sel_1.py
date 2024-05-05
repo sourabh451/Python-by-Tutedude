@@ -19,3 +19,12 @@ time.sleep(5)
 button = driver.find_element(By.NAME, "btnK")
 button.click()
 
+time.sleep(5)
+driver.back()
+time.sleep(5)
+driver.forward()
+time.sleep(5)
+
+driver.quit()
+
+
