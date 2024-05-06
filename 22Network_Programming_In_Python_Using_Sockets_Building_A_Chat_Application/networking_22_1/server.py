@@ -13,4 +13,5 @@ s.listen(4) # 4 is called backlog specifies accepted connection that the system 
 
 while True:
     client, address = s.accept()
+    client.send(bytes("Hey there, whats up?","utf-8")) # we can send message through bytes
     print(address)
