@@ -18,6 +18,7 @@ print(msg.decode('utf-8'))
 print(msg1.decode('utf-8'))
 '''
 
+'''
 while True:
     message = ''
     while True:
@@ -27,3 +28,11 @@ while True:
         message += msg.decode("utf-8")
     if len(message)>0:
         print(message)
+'''
+
+while True:
+    message = s.recv(50)
+    print("Server:"+message.decode('utf-8'))
+
+    message_to_send = input('Client:')
+    s.send(bytes(message_to_send,"utf-8"))
