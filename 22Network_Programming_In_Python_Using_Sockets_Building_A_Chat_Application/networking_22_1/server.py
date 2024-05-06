@@ -1,5 +1,25 @@
 import socket
 
+from tkinter import *
+
+def send(listbox,entry):
+    message = entry.get()
+    listbox.insert('end',message)
+    entry.delete(0,END)
+
+root = Tk()
+
+entry = Entry()
+entry.pack(side=BOTTOM)
+
+listbox = Listbox(root)
+listbox.pack()
+
+button = Button(root,text="Send",command=lambda :send(listbox,entry))
+button.pack(side=BOTTOM)
+
+root.mainloop()
+
 s = socket.socket(socket.AF_INET,socket.SOCK_STREAM) # AF_INET AF is address family and INET is socket type on ip address and SOCK_STREAM is socket type on TCP
 
 HOST_NAME = socket.gethostname()
